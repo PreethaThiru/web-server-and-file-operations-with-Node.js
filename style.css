@@ -1,0 +1,82 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+  }
+  
+  /* Container styling */
+  .container {
+    background-color: #1b2735;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Text styling */
+  h1 {
+    font-size: 2.2rem;
+    color: #66fcf1;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #45a29e;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  /* Button styling */
+  button, input[type="submit"] {
+    background-color: #45a29e;
+    color: #0b0c10;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
+  }
+  
+  button:hover, input[type="submit"]:hover {
+    background-color: #66fcf1;
+    transform: scale(1.05);
+  }
+  
+  /* Input styling */
+  input[type="text"] {
+    width: 80%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #0b0c10;
+    color: #ccc;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  

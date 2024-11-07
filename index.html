@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js File Server</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Node.js File Server</h1>
+    <form action="/read" method="get">
+      <button type="submit">Read File</button>
+    </form>
+    <form action="/write" method="get">
+      <input type="text" name="data" placeholder="Enter text to write" required>
+      <button type="submit">Write to File</button>
+    </form>
+    <form action="/edit" method="get">
+      <input type="text" name="newData" placeholder="Enter new text to edit" required>
+      <button type="submit">Edit File</button>
+    </form>
+    <form action="/delete" method="get">
+      <button type="submit">Delete File</button>
+    </form>
+  </div>
+</body>
+</html>
